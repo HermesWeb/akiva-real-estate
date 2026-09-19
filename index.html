@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKIVA.CO | Real Estate. Structured Differently.</title>
+    <meta name="description" content="A modern real estate company focused primarily on residential property, strategic acquisition, and investment opportunities across Lagos.">
+<!-- Favicon (Browser Tab Icon) -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#121212',
+                            ivory: '#F9F8F6',
+                            stone: '#D9D9D6',
+                            charcoal: '#2C2C2C',
+                            bronze: '#A39171'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Subtle Custom Animations */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-brand-ivory text-brand-black font-sans antialiased selection:bg-brand-bronze selection:text-white">
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 bg-transparent py-6 px-6 md:px-12 flex justify-between items-center text-white">
+        <a href="#" class="text-2xl font-serif tracking-wider font-semibold">AKIVA.CO</a>
+        
+        <div class="hidden md:flex space-x-8 text-sm tracking-wide font-light uppercase">
+            <a href="properties.html" class="hover:text-brand-bronze transition-colors">Properties</a>
+            <a href="#services" class="hover:text-brand-bronze transition-colors">Services</a>
+            <a href="#locations" class="hover:text-brand-bronze transition-colors">Locations</a>
+            <a href="#about" class="hover:text-brand-bronze transition-colors">About</a>
+        </div>
+
+        <div class="hidden md:block">
+            <a href="#enquiry" class="border border-white/50 px-6 py-3 text-sm tracking-wide uppercase hover:bg-white hover:text-brand-black transition-colors duration-300">
+                Private Enquiry
+            </a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+    </nav>
+
+    <!-- SECTION 01: HERO -->
+    <header class="relative w-full h-screen flex items-center justify-center overflow-hidden bg-brand-black">
+        <!-- Background Image -->
+        <div class="absolute inset-0 w-full h-full">
+            <img src="images/hero-image.jpg" alt="Premium Lagos Residence" class="w-full h-full object-cover opacity-60">
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center mt-20">
+            <h1 class="text-white font-serif text-5xl md:text-7xl lg:text-8xl leading-tight mb-6 fade-up">
+                REAL ESTATE.<br>
+                <span class="italic text-brand-stone font-light">STRUCTURED DIFFERENTLY.</span>
+            </h1>
+            <p class="text-white/80 font-light tracking-wide text-lg md:text-xl max-w-2xl mb-12 fade-up" style="transition-delay: 200ms;">
+                Residential property, strategic acquisition and exceptional spaces across Lagos.
+            </p>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 fade-up" style="transition-delay: 400ms;">
+                <a href="properties.html" class="bg-white text-brand-black px-8 py-4 text-sm tracking-widest uppercase hover:bg-brand-stone transition-colors">Explore Properties</a>
+                <a href="#enquiry" class="border border-white/40 text-white px-8 py-4 text-sm tracking-widest uppercase hover:bg-white/10 transition-colors">Private Enquiry</a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-70">
+            <span class="text-white text-xs tracking-[0.2em] mb-3 uppercase">Scroll</span>
+            <div class="w-[1px] h-12 bg-white/30 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-full bg-white animate-[scroll_2s_ease-in-out_infinite]"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 02: INTRODUCTION -->
+    <section id="about" class="py-32 px-6 md:px-12 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7 fade-up">
+                <h2 class="font-serif text-4xl md:text-6xl text-brand-black mb-8 leading-tight">
+                    A MODERN APPROACH TO REAL ESTATE.
+                </h2>
+                <div class="text-brand-charcoal font-light text-lg md:text-xl space-y-6 leading-relaxed max-w-2xl">
+                    <p>
+                        Akiva Real Estate Enterprises is a modern firm focused on sourcing, marketing, and facilitating exceptional residential property and investment opportunities across Lagos.
+                    </p>
+                    <p>
+                        We combine market knowledge, technology, and a highly personal client experience to make property transactions more structured, transparent, and deliberate.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 03: THE AKIVA STANDARD -->
+    <section class="py-24 bg-brand-black text-white px-6 md:px-12">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-serif text-3xl md:text-4xl mb-16 border-b border-white/20 pb-8 fade-up">THE AKIVA STANDARD</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div class="fade-up" style="transition-delay: 100ms;">
+                    <h3 class="text-xs tracking-[0.2em] text-brand-bronze mb-4 uppercase">Discernment</h3>
+                    <p class="font-light text-white/70 leading-relaxed">We identify opportunities based on location, quality, market positioning and long-term relevance.</p>
+                </div>
+                <div class="fade-up" style="transition-delay: 200ms;">
+                    <h3 class="text-xs tracking-[0.2em] text-brand-bronze mb-4 uppercase">Access</h3>
+                    <p class="font-light text-white/70 leading-relaxed">We connect clients to carefully selected opportunities across established and emerging Lagos markets.</p>
+                </div>
+                <div class="fade-up" style="transition-delay: 300ms;">
+                    <h3 class="text-xs tracking-[0.2em] text-brand-bronze mb-4 uppercase">Precision</h3>
+                    <p class="font-light text-white/70 leading-relaxed">From sourcing and negotiation to closing, every transaction is handled with structure and attention to detail.</p>
+                </div>
+                <div class="fade-up" style="transition-delay: 400ms;">
+                    <h3 class="text-xs tracking-[0.2em] text-brand-bronze mb-4 uppercase">Experience</h3>
+                    <p class="font-light text-white/70 leading-relaxed">Every client interaction is designed to be professional, discreet, responsive and highly personal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 04: FEATURED PROPERTIES -->
+    <section id="properties" class="py-32 px-6 md:px-12 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end border-b border-brand-stone pb-8 mb-16 fade-up">
+            <div>
+                <h2 class="font-serif text-4xl md:text-5xl text-brand-black mb-4">SELECTED RESIDENCES</h2>
+                <p class="text-brand-charcoal font-light">A curated selection of properties represented by Akiva</p>
+            </div>
+            <a href="properties.html" class="mt-6 md:mt-0 text-sm tracking-widest uppercase hover:text-brand-bronze transition-colors flex items-center">
+                View All <span class="ml-2">→</span>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
+            
+            <!-- Property 1 -->
+            <article class="group fade-up cursor-pointer">
+                <a href="properties.html">
+                    <div class="overflow-hidden mb-6 relative bg-brand-stone h-[400px]">
+                        <img src="images/omole-phase2.jpg" alt="Omole Phase II Extension, Olowora, Lagos" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-serif text-2xl">Omole Phase II Extension, Olowora, Lagos</h3>
+                            <span class="font-light text-lg">₦185,000,000</span>
+                        </div>
+                        <p class="text-sm tracking-widest text-brand-charcoal uppercase">3 Bedroom Semi-Detached Duplex</p>
+                        <div class="pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="border-b border-brand-black pb-1 text-sm uppercase tracking-widest">View Residence</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Property 2 -->
+            <article class="group fade-up cursor-pointer" style="transition-delay: 200ms;">
+                <a href="properties.html">
+                    <div class="overflow-hidden mb-6 relative bg-brand-stone h-[400px]">
+                        <img src="images/magodo-gra.jpg" alt="Magodo GRA Phase II" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-serif text-2xl">Magodo GRA Phase II</h3>
+                            <span class="font-light text-lg">₦300,000,000</span>
+                        </div>
+                        <p class="text-sm tracking-widest text-brand-charcoal uppercase">3 Bedroom Residence</p>
+                        <div class="pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="border-b border-brand-black pb-1 text-sm uppercase tracking-widest">View Residence</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- SECTION 05: LOCATIONS -->
+    <section id="locations" class="py-24 bg-brand-stone/30 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16 fade-up">
+                <h2 class="font-serif text-4xl md:text-5xl text-brand-black mb-4">LAGOS, SELECTED.</h2>
+                <p class="text-brand-charcoal font-light max-w-xl">A focused understanding of the neighbourhoods shaping Lagos residential real estate.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Ikoyi -->
+                <div class="group relative overflow-hidden h-[500px] cursor-pointer fade-up bg-brand-stone">
+                    <a href="properties.html">
+                        <img src="images/ikoyi.jpg" alt="Ikoyi Location" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8 w-full">
+                            <h3 class="font-serif text-white text-3xl mb-2">Ikoyi</h3>
+                            <p class="text-white/80 text-sm font-light uppercase tracking-wider mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">Luxury Residential · Prime</p>
+                            <span class="text-brand-bronze text-xs tracking-[0.2em] uppercase">Explore →</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Victoria Island -->
+                <div class="group relative overflow-hidden h-[500px] cursor-pointer fade-up bg-brand-stone" style="transition-delay: 100ms;">
+                    <a href="properties.html">
+                        <img src="images/victoria-island.jpg" alt="Victoria Island Location" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8 w-full">
+                            <h3 class="font-serif text-white text-3xl mb-2">Victoria Island</h3>
+                            <p class="text-white/80 text-sm font-light uppercase tracking-wider mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">Commercial · Residential</p>
+                            <span class="text-brand-bronze text-xs tracking-[0.2em] uppercase">Explore →</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Lekki Phase I -->
+                <div class="group relative overflow-hidden h-[500px] cursor-pointer fade-up bg-brand-stone" style="transition-delay: 200ms;">
+                    <a href="properties.html">
+                        <img src="images/lekki-phase1.jpg" alt="Lekki Phase I Location" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8 w-full">
+                            <h3 class="font-serif text-white text-3xl mb-2">Lekki Phase I</h3>
+                            <p class="text-white/80 text-sm font-light uppercase tracking-wider mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">Investment · Lifestyle</p>
+                            <span class="text-brand-bronze text-xs tracking-[0.2em] uppercase">Explore →</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Prime Mainland -->
+                <div class="group relative overflow-hidden h-[500px] cursor-pointer fade-up bg-brand-stone" style="transition-delay: 300ms;">
+                    <a href="properties.html">
+                        <img src="images/prime-mainland.jpg" alt="Prime Mainland Location" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8 w-full">
+                            <h3 class="font-serif text-white text-3xl mb-2">Prime Mainland</h3>
+                            <p class="text-white/80 text-sm font-light uppercase tracking-wider mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">Gbagada · Magodo · Omole</p>
+                            <span class="text-brand-bronze text-xs tracking-[0.2em] uppercase">Explore →</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 06: SOURCE A PROPERTY / ENQUIRY (NETLIFY FORM ACTIVATED) -->
+    <section id="enquiry" class="py-32 px-6 md:px-12 max-w-4xl mx-auto fade-up">
+        <div class="text-center mb-16">
+            <h2 class="font-serif text-4xl md:text-5xl text-brand-black mb-6">WE SOURCE. YOU DECIDE.</h2>
+            <p class="text-brand-charcoal font-light text-lg">
+                Looking for a particular property in Lagos? Tell us what you are looking for and our team will identify suitable opportunities across our network.
+            </p>
+        </div>
+
+        <form name="Private_Requirement" method="POST" data-netlify="true" class="space-y-12 bg-white p-8 md:p-16 border border-brand-stone">
+            <!-- Requirement Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div class="space-y-2">
+                    <label class="text-xs uppercase tracking-widest text-brand-charcoal font-medium">Full Name</label>
+                    <input type="text" name="Full_Name" required class="w-full border-b border-brand-stone py-3 focus:outline-none focus:border-brand-black bg-transparent transition-colors placeholder-brand-stone" placeholder="Your Name">
+                </div>
+
+                <div class="space-y-2">
+                    <label class="text-xs uppercase tracking-widest text-brand-charcoal font-medium">Email Address</label>
+                    <input type="email" name="Email" required class="w-full border-b border-brand-stone py-3 focus:outline-none focus:border-brand-black bg-transparent transition-colors placeholder-brand-stone" placeholder="you@example.com">
+                </div>
+
+                <div class="space-y-2">
+                    <label class="text-xs uppercase tracking-widest text-brand-charcoal font-medium">Purpose</label>
+                    <select name="Purpose" required class="w-full border-b border-brand-stone py-3 focus:outline-none focus:border-brand-black bg-transparent transition-colors appearance-none rounded-none">
+                        <option value="">Select Option</option>
+                        <option value="buy">Buy / Acquire</option>
+                        <option value="rent">Rent / Lease</option>
+                        <option value="invest">Invest</option>
+                        <option value="market">Market a Property</option>
+                    </select>
+                </div>
+
+                <div class="space-y-2">
+                    <label class="text-xs uppercase tracking-widest text-brand-charcoal font-medium">Preferred Location</label>
+                    <input type="text" name="Location" required class="w-full border-b border-brand-stone py-3 focus:outline-none focus:border-brand-black bg-transparent transition-colors placeholder-brand-stone" placeholder="e.g. Ikoyi, Omole Phase II">
+                </div>
+
+                <div class="space-y-2 md:col-span-2">
+                    <label class="text-xs uppercase tracking-widest text-brand-charcoal font-medium">Additional Requirements</label>
+                    <textarea name="Requirements" rows="4" required class="w-full border-b border-brand-stone py-3 focus:outline-none focus:border-brand-black bg-transparent transition-colors placeholder-brand-stone resize-none" placeholder="Please detail property type, budget in NGN, and timeline..."></textarea>
+                </div>
+
+            </div>
+
+            <button type="submit" class="w-full bg-brand-black text-white py-5 text-sm uppercase tracking-widest hover:bg-brand-charcoal transition-colors">
+                Submit Private Requirement
+            </button>
+
+            <div class="text-center pt-8 border-t border-brand-stone mt-12">
+                <p class="text-sm font-light text-brand-charcoal mb-2">Or speak directly with an Akiva advisor</p>
+                <a href="tel:2349153895099" class="font-serif text-2xl text-brand-black hover:text-brand-bronze transition-colors">0915 389 5099</a>
+            </div>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-black text-white pt-24 pb-12 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            
+            <div class="md:col-span-2">
+                <a href="#" class="text-3xl font-serif tracking-wider font-semibold block mb-4">AKIVA.CO</a>
+                <p class="text-brand-stone/60 font-light text-sm max-w-xs uppercase tracking-widest">
+                    Real Estate.<br>Structured Differently.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-xs tracking-[0.2em] text-brand-stone uppercase mb-6">Navigation</h4>
+                <ul class="space-y-4 font-light text-sm text-white/70">
+                    <li><a href="properties.html" class="hover:text-white transition-colors">Properties</a></li>
+                    <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                    <li><a href="#locations" class="hover:text-white transition-colors">Locations</a></li>
+                    <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-xs tracking-[0.2em] text-brand-stone uppercase mb-6">Connect</h4>
+                <ul class="space-y-4 font-light text-sm text-white/70">
+                    <li><a href="https://www.instagram.com/akivarealtyng" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Instagram</a></li>
+                    <li><a href="https://www.twitter.com/akivarealtyng" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">X</a></li>
+                    <li><a href="https://wa.me/2349153895099" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">WhatsApp</a></li>
+                    <li><a href="#enquiry" class="hover:text-white transition-colors">Private Enquiry</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-white/40 font-light">
+            <p>&copy; 2026 Akiva Real Estate Enterprises. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCROLL ANIMATION SCRIPT & NAVBAR LOGIC -->
+    <script>
+        // Navbar background transition on scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-brand-black');
+                navbar.classList.remove('bg-transparent', 'py-6');
+                navbar.classList.add('py-4');
+            } else {
+                navbar.classList.remove('bg-brand-black');
+                navbar.classList.add('bg-transparent', 'py-6');
+                navbar.classList.remove('py-4');
+            }
+        });
+
+        // Intersection Observer for fade-up animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-up').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
