@@ -1,4 +1,4 @@
-# Akiva CO. Real Estate Platform
+# Akiva.co Real Estate Platform
 
 A premium, responsive frontend interface for a modern real estate enterprise based in Lagos. Built to showcase structural precision and editorial design.
 
