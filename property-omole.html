@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omole Phase II Extension | AKIVA REALTY.CO</title>
+    <meta name="description" content="3 Bedroom Semi-Detached Duplex in Omole Phase II Extension, Olowora, Lagos. Presented by Akivarealty.co.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#121212',
+                            ivory: '#F9F8F6',
+                            stone: '#D9D9D6',
+                            charcoal: '#2C2C2C',
+                            bronze: '#A39171'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-brand-ivory text-brand-black font-sans antialiased selection:bg-brand-bronze selection:text-white">
+
+    <!-- NAVIGATION (Solid Background) -->
+    <nav class="fixed w-full z-50 bg-brand-black py-4 px-6 md:px-12 flex justify-between items-center text-white">
+        <a href="index.html" class="text-2xl font-serif tracking-wider font-semibold">AKIVA REALTY.CO</a>
+        
+        <div class="hidden md:flex space-x-8 text-sm tracking-wide font-light uppercase">
+            <a href="properties.html" class="hover:text-brand-bronze transition-colors">Properties</a>
+            <a href="index.html#services" class="hover:text-brand-bronze transition-colors">Services</a>
+            <a href="index.html#locations" class="hover:text-brand-bronze transition-colors">Locations</a>
+            <a href="index.html#about" class="hover:text-brand-bronze transition-colors">About</a>
+        </div>
+
+        <div class="hidden md:block">
+            <a href="index.html#enquiry" class="border border-white/50 px-6 py-3 text-sm tracking-wide uppercase hover:bg-white hover:text-brand-black transition-colors duration-300">
+                Private Enquiry
+            </a>
+        </div>
+    </nav>
+
+    <!-- PROPERTY HERO IMAGE -->
+    <header class="pt-20 fade-up">
+        <div class="w-full h-[60vh] md:h-[70vh] overflow-hidden bg-brand-stone relative">
+            <img src="images/omole-phase2.jpg" alt="Omole Phase II Extension Main View" class="w-full h-full object-cover">
+            <div class="absolute bottom-6 left-6 md:bottom-12 md:left-12 bg-white px-6 py-3 text-xs uppercase tracking-widest shadow-sm">
+                For Sale
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN PROPERTY CONTENT -->
+    <main class="py-16 px-6 md:px-12 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+            
+            <!-- LEFT COLUMN (Details & Gallery) -->
+            <div class="lg:col-span-8">
+                
+                <!-- Title & Meta -->
+                <div class="border-b border-brand-stone pb-12 mb-12 fade-up">
+                    <h1 class="font-serif text-4xl md:text-5xl text-brand-black mb-4 leading-tight">
+                        Omole Phase II Extension, Olowora, Lagos
+                    </h1>
+                    <div class="text-2xl font-light text-brand-charcoal mb-8">₦185,000,000</div>
+                    
+                    <div class="flex flex-wrap gap-6 text-xs font-medium text-brand-charcoal uppercase tracking-widest">
+                        <span class="flex items-center">3 Bedrooms</span>
+                        <span class="hidden md:inline">•</span>
+                        <span class="flex items-center">4 Bathrooms</span>
+                        <span class="hidden md:inline">•</span>
+                        <span class="flex items-center">Parking</span>
+                        <span class="hidden md:inline">•</span>
+                        <span class="flex items-center">Semi-Detached Duplex</span>
+                    </div>
+                </div>
+
+                <!-- The Residence Description -->
+                <div class="mb-16 fade-up">
+                    <h2 class="text-xs tracking-[0.2em] text-brand-stone uppercase mb-6 text-brand-black">The Residence</h2>
+                    <div class="text-brand-charcoal font-light text-lg space-y-6 leading-relaxed">
+                        <p>
+                            Positioned in the highly sought-after Omole Phase II Extension, this modern 3-bedroom semi-detached duplex represents a superb standard of contemporary residential architecture. The property has been structured to maximize natural light and interior space, offering a refined living experience.
+                        </p>
+                        <p>
+                            The ground floor introduces a spacious primary living area that seamlessly transitions into a fully fitted kitchen, designed for both aesthetic appeal and practical capability. Each of the three bedrooms is situated on the upper level and features en-suite facilities, providing privacy and comfort. 
+                        </p>
+                        <p>
+                            Externally, the residence includes a dedicated parking compound and operates within a secure, access-controlled environment, making it an exceptional acquisition for families or discerning investors seeking premium mainland assets.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Property Specifications Table -->
+                <div class="mb-16 fade-up">
+                    <h2 class="text-xs tracking-[0.2em] text-brand-stone uppercase mb-6 text-brand-black">Property Details</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 border-t border-brand-stone pt-6">
+                        <div class="flex justify-between py-2 border-b border-brand-stone/40">
+                            <span class="font-light text-brand-charcoal text-sm">Property Type</span>
+                            <span class="font-medium text-sm">Semi-Detached Duplex</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-brand-stone/40">
+                            <span class="font-light text-brand-charcoal text-sm">Bedrooms</span>
+                            <span class="font-medium text-sm">3</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-brand-stone/40">
+                            <span class="font-light text-brand-charcoal text-sm">Bathrooms</span>
+                            <span class="font-medium text-sm">4</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-brand-stone/40">
+                            <span class="font-light text-brand-charcoal text-sm">Toilets</span>
+                            <span class="font-medium text-sm">4</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-brand-stone/40">
+                            <span class="font-light text-brand-charcoal text-sm">Parking</span>
+                            <span class="font-medium text-sm">Available</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-brand-stone/40">
+                            <span class="font-light text-brand-charcoal text-sm">Status</span>
+                            <span class="font-medium text-sm">Available</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Grid (Re-using the main image as a placeholder for now) -->
+                <div class="mb-16 fade-up">
+                    <h2 class="text-xs tracking-[0.2em] text-brand-stone uppercase mb-6 text-brand-black">Gallery</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="h-64 bg-brand-stone">
+                            <img src="images/omole-phase2.jpg" alt="Interior View 1" class="w-full h-full object-cover">
+                        </div>
+                        <div class="h-64 bg-brand-stone">
+                            <img src="images/omole-phase2.jpg" alt="Interior View 2" class="w-full h-full object-cover">
+                        </div>
+                        <div class="md:col-span-2 h-96 bg-brand-stone">
+                            <img src="images/omole-phase2.jpg" alt="Exterior View" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Location -->
+                <div class="mb-16 fade-up">
+                    <h2 class="text-xs tracking-[0.2em] text-brand-stone uppercase mb-6 text-brand-black">Location</h2>
+                    <div class="bg-brand-stone h-64 w-full flex items-center justify-center p-8 text-center">
+                        <p class="font-light text-brand-charcoal text-sm max-w-md">
+                            Exact coordinates and detailed neighborhood viewing are provided exclusively to clients during the private viewing process to ensure discretion and security.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT COLUMN (Sticky Enquiry Form) -->
+            <div class="lg:col-span-4 relative">
+                <div class="sticky top-32 bg-white border border-brand-stone p-8 fade-up shadow-sm">
+                    <h3 class="font-serif text-2xl mb-4 text-brand-black">Private Viewing</h3>
+                    <p class="text-brand-charcoal font-light text-sm mb-8">
+                        Interested in this residence? Speak with an Akivarealty.co advisor to request further details or arrange a private viewing.
+                    </p>
+
+                    <form name="Property_Viewing_Request" method="POST" data-netlify="true" class="space-y-6">
+                        <!-- Hidden field to tell you WHICH property they are asking about -->
+                        <input type="hidden" name="Property_Ref" value="Omole Phase II Extension - N185M">
+
+                        <div class="space-y-1">
+                            <label class="text-xs uppercase tracking-widest text-brand-charcoal font-medium">Full Name</label>
+                            <input type="text" name="Name" required class="w-full border-b border-brand-stone py-2 focus:outline-none focus:border-brand-black bg-transparent text-sm">
+                        </div>
+
+                        <div class="space-y-1">
+                            <label class="text-xs uppercase tracking-widest text-brand-charcoal font-medium">Email Address</label>
+                            <input type="email" name="Email" required class="w-full border-b border-brand-stone py-2 focus:outline-none focus:border-brand-black bg-transparent text-sm">
+                        </div>
+
+                        <div class="space-y-1">
+                            <label class="text-xs uppercase tracking-widest text-brand-charcoal font-medium">Phone Number</label>
+                            <input type="tel" name="Phone" required class="w-full border-b border-brand-stone py-2 focus:outline-none focus:border-brand-black bg-transparent text-sm">
+                        </div>
+
+                        <div class="space-y-1">
+                            <label class="text-xs uppercase tracking-widest text-brand-charcoal font-medium">Message (Optional)</label>
+                            <textarea name="Message" rows="2" class="w-full border-b border-brand-stone py-2 focus:outline-none focus:border-brand-black bg-transparent text-sm resize-none" placeholder="Preferred viewing dates..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand-black text-white py-4 text-xs uppercase tracking-widest hover:bg-brand-charcoal transition-colors mt-4">
+                            Request Private Viewing
+                        </button>
+                    </form>
+
+                    <div class="text-center pt-6 border-t border-brand-stone mt-8">
+                        <p class="text-xs font-light text-brand-charcoal uppercase tracking-widest mb-2">Direct Contact</p>
+                        <a href="tel:2349153895099" class="font-serif text-xl text-brand-black hover:text-brand-bronze transition-colors">0915 389 5099</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-black text-white pt-24 pb-12 px-6 md:px-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            <div class="md:col-span-2">
+                <a href="index.html" class="text-3xl font-serif tracking-wider font-semibold block mb-4">AKIVA REALTY.CO</a>
+                <p class="text-brand-stone/60 font-light text-sm max-w-xs uppercase tracking-widest">
+                    Real Estate.<br>Structured Differently.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-xs tracking-[0.2em] text-brand-stone uppercase mb-6">Navigation</h4>
+                <ul class="space-y-4 font-light text-sm text-white/70">
+                    <li><a href="properties.html" class="hover:text-white transition-colors">Properties</a></li>
+                    <li><a href="index.html#services" class="hover:text-white transition-colors">Services</a></li>
+                    <li><a href="index.html#locations" class="hover:text-white transition-colors">Locations</a></li>
+                    <li><a href="index.html#about" class="hover:text-white transition-colors">About</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-xs tracking-[0.2em] text-brand-stone uppercase mb-6">Connect</h4>
+                <ul class="space-y-4 font-light text-sm text-white/70">
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">LinkedIn</a></li>
+                    <li><a href="https://wa.me/2349153895099" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">WhatsApp</a></li>
+                    <li><a href="index.html#enquiry" class="hover:text-white transition-colors">Private Enquiry</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-white/40 font-light">
+            <p>&copy; 2026 Akiva Real Estate Enterprises. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCROLL ANIMATION SCRIPT -->
+    <script>
+        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-up').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
