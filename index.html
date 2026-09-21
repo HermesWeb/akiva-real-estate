@@ -6,18 +6,9 @@
     <title>AKIVA REALTY.CO | Real Estate. Structured Differently.</title>
     <meta name="description" content="A modern real estate company focused primarily on residential property, strategic acquisition, and investment opportunities across Lagos.">
     
-    <!-- Favicon (Browser Tab Icon) -->
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/favicon.png">
-
-    <!-- Social Share Preview -->
-    <meta property="og:title" content="AKIVA REALTY.CO | Real Estate. Structured Differently.">
-    <meta property="og:description" content="A modern real estate company focused primarily on residential property, strategic acquisition, and investment opportunities across Lagos.">
-    <meta property="og:image" content="https://www.yourdomain.com/images/social-preview.jpg">
-    <meta property="og:url" content="https://www.yourdomain.com">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://www.yourdomain.com/images/social-preview.jpg">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,7 +49,6 @@
             opacity: 1;
             transform: translateY(0);
         }
-        /* Tab transition styling */
         .tab-content {
             animation: fadeIn 0.5s ease-out forwards;
         }
@@ -77,8 +67,8 @@
         <div class="hidden md:flex space-x-8 text-sm tracking-wide font-light uppercase">
             <a href="properties.html" class="hover:text-brand-bronze transition-colors">Properties</a>
             <a href="#services" class="hover:text-brand-bronze transition-colors">Services</a>
+            <a href="#insights" class="hover:text-brand-bronze transition-colors">Insights</a>
             <a href="#locations" class="hover:text-brand-bronze transition-colors">Locations</a>
-            <a href="#about" class="hover:text-brand-bronze transition-colors">About</a>
         </div>
 
         <div class="hidden md:block">
@@ -136,7 +126,7 @@
     </section>
 
     <!-- SECTION 03: THE AKIVA STANDARD -->
-    <section class="py-24 bg-brand-black text-white px-6 md:px-12">
+    <section id="services" class="py-24 bg-brand-black text-white px-6 md:px-12">
         <div class="max-w-7xl mx-auto">
             <h2 class="font-serif text-3xl md:text-4xl mb-16 border-b border-white/20 pb-8 fade-up">THE AKIVA STANDARD</h2>
             
@@ -161,7 +151,7 @@
         </div>
     </section>
 
-    <!-- SECTION 04: PORTFOLIO (TABS ADDED) -->
+    <!-- SECTION 04: PORTFOLIO -->
     <section id="properties" class="py-32 px-6 md:px-12 max-w-7xl mx-auto">
         <div class="flex flex-col md:flex-row justify-between items-end mb-12 fade-up">
             <div>
@@ -173,7 +163,6 @@
             </a>
         </div>
 
-        <!-- Portfolio Category Tabs -->
         <div class="flex overflow-x-auto space-x-8 border-b border-brand-stone mb-12 fade-up scrollbar-hide">
             <button class="tab-btn whitespace-nowrap active border-b-2 border-brand-black text-brand-black pb-4 text-sm tracking-widest uppercase font-medium transition-colors" data-target="for-sale">For Sale</button>
             <button class="tab-btn whitespace-nowrap border-b-2 border-transparent text-brand-charcoal pb-4 text-sm tracking-widest uppercase hover:text-brand-black transition-colors" data-target="for-rent">Rent</button>
@@ -181,11 +170,9 @@
             <button class="tab-btn whitespace-nowrap border-b-2 border-transparent text-brand-charcoal pb-4 text-sm tracking-widest uppercase hover:text-brand-black transition-colors" data-target="jv">Joint Ventures</button>
         </div>
 
-        <!-- 1. FOR SALE CONTENT -->
         <div id="for-sale" class="tab-content grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16 block">
             <article class="group cursor-pointer">
-                <!-- UPDATED LINK HERE TO property-omole.html -->
-                <a href="property-omole.html">
+                <a href="property-omole.html" class="block">
                     <div class="overflow-hidden mb-6 relative bg-brand-stone h-[400px]">
                         <img src="images/omole-phase2.jpg" alt="Omole Phase II Extension, Olowora, Lagos" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                         <div class="absolute top-4 right-4 bg-white px-3 py-1 text-xs uppercase tracking-widest shadow-sm">For Sale</div>
@@ -204,7 +191,7 @@
             </article>
 
             <article class="group cursor-pointer">
-                <a href="properties.html">
+                <a href="properties.html" class="block">
                     <div class="overflow-hidden mb-6 relative bg-brand-stone h-[400px]">
                         <img src="images/magodo-gra.jpg" alt="Magodo GRA Phase II" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                         <div class="absolute top-4 right-4 bg-white px-3 py-1 text-xs uppercase tracking-widest shadow-sm">For Sale</div>
@@ -223,10 +210,9 @@
             </article>
         </div>
 
-        <!-- 2. RENT CONTENT -->
         <div id="for-rent" class="tab-content grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16 hidden">
             <article class="group cursor-pointer">
-                <a href="properties.html">
+                <a href="properties.html" class="block">
                     <div class="overflow-hidden mb-6 relative bg-brand-stone h-[400px]">
                         <img src="images/lekki-phase1.jpg" alt="Lekki Phase I Rental" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                         <div class="absolute top-4 right-4 bg-white px-3 py-1 text-xs uppercase tracking-widest shadow-sm">For Rent</div>
@@ -245,10 +231,9 @@
             </article>
         </div>
 
-        <!-- 3. SHORTSTAY CONTENT -->
         <div id="shortstay" class="tab-content grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16 hidden">
             <article class="group cursor-pointer">
-                <a href="properties.html">
+                <a href="properties.html" class="block">
                     <div class="overflow-hidden mb-6 relative bg-brand-stone h-[400px]">
                         <img src="images/victoria-island.jpg" alt="Victoria Island Shortstay" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                         <div class="absolute top-4 right-4 bg-white px-3 py-1 text-xs uppercase tracking-widest shadow-sm">Shortstay</div>
@@ -267,10 +252,9 @@
             </article>
         </div>
 
-        <!-- 4. JOINT VENTURES CONTENT -->
         <div id="jv" class="tab-content grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16 hidden">
             <article class="group cursor-pointer">
-                <a href="properties.html">
+                <a href="properties.html" class="block">
                     <div class="overflow-hidden mb-6 relative bg-brand-stone h-[400px]">
                         <img src="images/prime-mainland.jpg" alt="Prime Mainland JV" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                         <div class="absolute top-4 right-4 bg-brand-black text-white px-3 py-1 text-xs uppercase tracking-widest shadow-sm">JV Opportunity</div>
@@ -304,46 +288,52 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <!-- Article 1 -->
+                <!-- Article 1 (Linked to the page we just built) -->
                 <article class="group cursor-pointer fade-up">
                     <a href="insight-mainland.html" class="block">
-                       <div class="overflow-hidden mb-6 h-64 bg-brand-stone relative">
-                    </div>
-                    <div class="space-y-3">
-                        <p class="text-xs font-light text-brand-charcoal uppercase tracking-widest">Market Analysis · Sep 21, 2026</p>
-                        <h3 class="font-serif text-2xl text-brand-black group-hover:text-brand-bronze transition-colors">The Shift in Lagos Mainland Premium Real Estate</h3>
-                        <p class="text-brand-charcoal font-light text-sm line-clamp-3">
-                            An in-depth look at why strategic buyers are increasingly looking toward structured environments in Omole and Magodo GRA for long-term residential holds.
-                        </p>
-                    </div>
+                        <div class="overflow-hidden mb-6 h-64 bg-brand-stone relative">
+                            <img src="images/lekki-phase1.jpg" alt="Lekki Real Estate Market" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </div>
+                        <div class="space-y-3">
+                            <p class="text-xs font-light text-brand-charcoal uppercase tracking-widest">Market Analysis · Sep 21, 2026</p>
+                            <h3 class="font-serif text-2xl text-brand-black group-hover:text-brand-bronze transition-colors">The Shift in Lagos Mainland Premium Real Estate</h3>
+                            <p class="text-brand-charcoal font-light text-sm line-clamp-3">
+                                An in-depth look at why strategic buyers are increasingly looking toward structured environments in Omole and Magodo GRA for long-term residential holds.
+                            </p>
+                        </div>
+                    </a>
                 </article>
 
-                <!-- Article 2 -->
+                <!-- Article 2 (Ready to link when built) -->
                 <article class="group cursor-pointer fade-up" style="transition-delay: 100ms;">
-                    <div class="overflow-hidden mb-6 h-64 bg-brand-stone relative">
-                        <img src="images/ikoyi.jpg" alt="Property Structuring" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                    </div>
-                    <div class="space-y-3">
-                        <p class="text-xs font-light text-brand-charcoal uppercase tracking-widest">Investment · Sep 14, 2026</p>
-                        <h3 class="font-serif text-2xl text-brand-black group-hover:text-brand-bronze transition-colors">Structuring Joint Ventures in Lagos</h3>
-                        <p class="text-brand-charcoal font-light text-sm line-clamp-3">
-                            Navigating land acquisition and development partnerships requires precision. How Akiva approaches risk mitigation and opportunity scaling.
-                        </p>
-                    </div>
+                    <a href="#" class="block">
+                        <div class="overflow-hidden mb-6 h-64 bg-brand-stone relative">
+                            <img src="images/ikoyi.jpg" alt="Property Structuring" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </div>
+                        <div class="space-y-3">
+                            <p class="text-xs font-light text-brand-charcoal uppercase tracking-widest">Investment · Sep 14, 2026</p>
+                            <h3 class="font-serif text-2xl text-brand-black group-hover:text-brand-bronze transition-colors">Structuring Joint Ventures in Lagos</h3>
+                            <p class="text-brand-charcoal font-light text-sm line-clamp-3">
+                                Navigating land acquisition and development partnerships requires precision. How Akiva approaches risk mitigation and opportunity scaling.
+                            </p>
+                        </div>
+                    </a>
                 </article>
 
-                <!-- Article 3 -->
+                <!-- Article 3 (Ready to link when built) -->
                 <article class="group cursor-pointer fade-up" style="transition-delay: 200ms;">
-                    <div class="overflow-hidden mb-6 h-64 bg-brand-stone relative">
-                        <img src="images/victoria-island.jpg" alt="Architecture" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                    </div>
-                    <div class="space-y-3">
-                        <p class="text-xs font-light text-brand-charcoal uppercase tracking-widest">Design · Sep 02, 2026</p>
-                        <h3 class="font-serif text-2xl text-brand-black group-hover:text-brand-bronze transition-colors">The Return of Intentional Architecture</h3>
-                        <p class="text-brand-charcoal font-light text-sm line-clamp-3">
-                            Moving beyond standard builds. Why the modern Lagos buyer demands intentional spatial planning, natural light, and discreet luxury.
-                        </p>
-                    </div>
+                    <a href="#" class="block">
+                        <div class="overflow-hidden mb-6 h-64 bg-brand-stone relative">
+                            <img src="images/victoria-island.jpg" alt="Architecture" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </div>
+                        <div class="space-y-3">
+                            <p class="text-xs font-light text-brand-charcoal uppercase tracking-widest">Design · Sep 02, 2026</p>
+                            <h3 class="font-serif text-2xl text-brand-black group-hover:text-brand-bronze transition-colors">The Return of Intentional Architecture</h3>
+                            <p class="text-brand-charcoal font-light text-sm line-clamp-3">
+                                Moving beyond standard builds. Why the modern Lagos buyer demands intentional spatial planning, natural light, and discreet luxury.
+                            </p>
+                        </div>
+                    </a>
                 </article>
             </div>
         </div>
@@ -358,9 +348,8 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Locations -->
                 <div class="group relative overflow-hidden h-[500px] cursor-pointer fade-up bg-brand-stone">
-                    <a href="properties.html">
+                    <a href="properties.html" class="block h-full">
                         <img src="images/ikoyi.jpg" alt="Ikoyi Location" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-8 w-full">
@@ -372,7 +361,7 @@
                 </div>
 
                 <div class="group relative overflow-hidden h-[500px] cursor-pointer fade-up bg-brand-stone" style="transition-delay: 100ms;">
-                    <a href="properties.html">
+                    <a href="properties.html" class="block h-full">
                         <img src="images/victoria-island.jpg" alt="Victoria Island Location" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-8 w-full">
@@ -384,7 +373,7 @@
                 </div>
 
                 <div class="group relative overflow-hidden h-[500px] cursor-pointer fade-up bg-brand-stone" style="transition-delay: 200ms;">
-                    <a href="properties.html">
+                    <a href="properties.html" class="block h-full">
                         <img src="images/lekki-phase1.jpg" alt="Lekki Phase I Location" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-8 w-full">
@@ -396,7 +385,7 @@
                 </div>
 
                 <div class="group relative overflow-hidden h-[500px] cursor-pointer fade-up bg-brand-stone" style="transition-delay: 300ms;">
-                    <a href="properties.html">
+                    <a href="properties.html" class="block h-full">
                         <img src="images/prime-mainland.jpg" alt="Prime Mainland Location" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-8 w-full">
@@ -410,7 +399,7 @@
         </div>
     </section>
 
-    <!-- SECTION 06: SOURCE A PROPERTY / ENQUIRY -->
+    <!-- SECTION 06: SOURCE A PROPERTY / ENQUIRY (Updated for Formspree) -->
     <section id="enquiry" class="py-32 px-6 md:px-12 max-w-4xl mx-auto fade-up">
         <div class="text-center mb-16">
             <h2 class="font-serif text-4xl md:text-5xl text-brand-black mb-6">WE SOURCE. YOU DECIDE.</h2>
@@ -419,7 +408,8 @@
             </p>
         </div>
 
-        <form name="Private_Requirement" method="POST" data-netlify="true" class="space-y-12 bg-white p-8 md:p-16 border border-brand-stone">
+        <!-- Form action updated to Formspree -->
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="space-y-12 bg-white p-8 md:p-16 border border-brand-stone">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="space-y-2">
                     <label class="text-xs uppercase tracking-widest text-brand-charcoal font-medium">Full Name</label>
@@ -428,7 +418,7 @@
 
                 <div class="space-y-2">
                     <label class="text-xs uppercase tracking-widest text-brand-charcoal font-medium">Email Address</label>
-                    <input type="email" name="email" required class="w-full border-b border-brand-stone py-3 focus:outline-none focus:border-brand-black bg-transparent transition-colors placeholder-brand-stone" placeholder="you@example.com">
+                    <input type="email" name="Email" required class="w-full border-b border-brand-stone py-3 focus:outline-none focus:border-brand-black bg-transparent transition-colors placeholder-brand-stone" placeholder="you@example.com">
                 </div>
 
                 <div class="space-y-2">
@@ -481,15 +471,15 @@
                     <li><a href="properties.html" class="hover:text-white transition-colors">Properties</a></li>
                     <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
                     <li><a href="#locations" class="hover:text-white transition-colors">Locations</a></li>
-                    <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                    <li><a href="#insights" class="hover:text-white transition-colors">Insights</a></li>
                 </ul>
             </div>
 
             <div>
                 <h4 class="text-xs tracking-[0.2em] text-brand-stone uppercase mb-6">Connect</h4>
                 <ul class="space-y-4 font-light text-sm text-white/70">
-                    <li><a href="https://www.instagram.com/akivarealtyng" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Instagram</a></li>
-                    <li><a href="https://www.x.com/akivarealtyng" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">X</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">LinkedIn</a></li>
                     <li><a href="https://wa.me/2349153895099" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">WhatsApp</a></li>
                     <li><a href="#enquiry" class="hover:text-white transition-colors">Private Enquiry</a></li>
                 </ul>
@@ -507,7 +497,6 @@
 
     <!-- INTERACTIVE SCRIPTS -->
     <script>
-        // Navbar background transition on scroll
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
@@ -519,7 +508,6 @@
             }
         });
 
-        // Intersection Observer for scroll fade animations
         const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
         const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
@@ -534,29 +522,24 @@
             observer.observe(el);
         });
 
-        // Tab Switching Logic for Portfolio Section
         const tabBtns = document.querySelectorAll('.tab-btn');
         const tabContents = document.querySelectorAll('.tab-content');
 
         tabBtns.forEach(btn => {
             btn.addEventListener('click', () => {
-                // 1. Reset all buttons to inactive state
                 tabBtns.forEach(b => {
                     b.classList.remove('border-brand-black', 'text-brand-black');
                     b.classList.add('border-transparent', 'text-brand-charcoal');
                 });
                 
-                // 2. Set clicked button to active state
                 btn.classList.add('border-brand-black', 'text-brand-black');
                 btn.classList.remove('border-transparent', 'text-brand-charcoal');
 
-                // 3. Hide all tab contents
                 tabContents.forEach(c => {
                     c.classList.add('hidden');
                     c.classList.remove('block');
                 });
 
-                // 4. Show the matching tab content
                 const targetId = btn.getAttribute('data-target');
                 document.getElementById(targetId).classList.remove('hidden');
                 document.getElementById(targetId).classList.add('block');
